@@ -20,7 +20,7 @@
 
   css3 = function(x, y) {
     var newPoz;
-    newPoz = this.style[prefixTransform].match(/-?[0-9]+/gi) || [0, 0];
+    newPoz = this.style[prefixTransform].match(/-?[0-9.0-9]+/gi) || [0, 0];
     if (typeOfNumber(x)) {
       newPoz[0] = x;
     }
